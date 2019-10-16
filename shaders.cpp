@@ -46,7 +46,6 @@ void shadererrors (const GLint shader) {
 
 GLuint initshaders (GLenum type, const char *filename) 
 {
-  // Using GLSL shaders, OpenGL book, page 679 of 7th edition
   GLuint shader = glCreateShader(type) ; 
   GLint compiled ; 
   string str = textFileRead (filename) ; 
